@@ -1,0 +1,84 @@
+:root {
+  /* Color Palette — Backgrounds (Dark charcoal foundation & layered surfaces) */
+  --color-bg: #0d0f12;
+  --color-surface-base: #111419;
+  --color-surface: #14171d;
+  --color-surface-card: #14171d;
+  --color-surface-hover: #1b1f27;
+  --color-surface-overlay: rgba(20, 23, 29, 0.85);
+
+  /* Color Palette — Typography (WCAG AAA/AA verified against #0d0f12, #14171d, #1b1f27) */
+  --color-text-primary: #f3f4f6;     /* 17.44:1 vs bg, 16.31:1 vs surface */
+  --color-text-secondary: #9ca3af;   /* 7.56:1 vs bg, 7.07:1 vs surface */
+  --color-text-muted: #848a96;       /* 5.54:1 vs bg, 5.18:1 vs surface, 4.76:1 vs surface-hover */
+
+  /* Color Palette — Lime Accent (Restrained highlights and links) */
+  --color-accent: #a3e635;           /* 12.73:1 vs bg, 11.90:1 vs surface */
+  --color-accent-hover: #bef264;     /* 14.69:1 vs bg */
+  --color-accent-contrast: #0d0f12;  /* 12.73:1 vs lime accent */
+  --color-accent-subtle: rgba(163, 230, 53, 0.12);
+  --color-accent-subtle-hover: rgba(163, 230, 53, 0.20);
+  --color-accent-glow: rgba(163, 230, 53, 0.08);
+
+  /* Color Palette — Borders and UI Components (WCAG AA non-text contrast verified >= 3:1) */
+  --color-border-subtle: #262a34;    /* Structural divider */
+  --color-border: #606a7c;           /* 3.52:1 vs bg (#0d0f12), 3.29:1 vs card surface (#14171d) */
+  --color-border-interactive: #606a7c; /* 3.29:1 vs surface (#14171d), meets WCAG AA SC 1.4.11 */
+  --color-border-accent-subtle: rgba(163, 230, 53, 0.35);
+  --color-focus: #a3e635;            /* 12.73:1 vs bg, meets WCAG AA SC 2.4.7 visible focus */
+
+  /* Typography Scale — System Stack */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Spacing Scale — 8px Grid */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  /* Layout Primitives */
+  --container-max-width: 72rem; /* 1152px */
+  --container-padding: 1.5rem;
+
+  /* Radii */
+  --radius-xs: 0.125rem; /* 2px - technical sharp corners */
+  --radius-sm: 0.25rem;  /* 4px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-full: 9999px;
+
+  /* Elevation Shadows & Technical Glows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 16px 0 rgba(0, 0, 0, 0.45);
+  --shadow-card-hover: 0 8px 24px 0 rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(163, 230, 53, 0.35);
+  --shadow-accent-glow: 0 0 20px rgba(163, 230, 53, 0.15);
+
+  /* Motion & Transitions (Cubic-bezier for engineered snap) */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
